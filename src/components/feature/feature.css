@@ -1,0 +1,119 @@
+.link_animation {
+  background-image: linear-gradient(90deg, #8e88fb, #ff8a71);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+
+  text-decoration: none;
+}
+
+.link_animation:hover {
+  background-size: 100% 3px;
+}
+
+.ps__features-container__feature-education {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+
+  margin: 1rem;
+}
+
+.ps__features-container__feature-title {
+  flex: 1;
+  max-width: 180px;
+  margin-right: 2rem;
+}
+
+.ps__features-container__feature-title h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.ps__features-container__feature-title div {
+  width: 300px;
+  height: 3px;
+  background: var(--gradient-bar);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.25rem;
+}
+
+.ps__features-container_feature-text {
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+}
+
+.ps__features-container_feature-text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.ps__features-container_feature-text h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.ps__features-container__feature-year h3 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: px;
+  letter-spacing: -0.04em;
+  color: #f3f3f3;
+}
+
+.p.ps__features-container__feature-year {
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+}
+
+@media screen and (max-width: 550px) {
+  .ps__features-container__feature-title h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .ps__features-container_feature-text h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .ps__features-container__feature-year h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .ps__features-container_feature-text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .ps__features-container__feature {
+    margin: 0rem 0;
+  }
+
+  .ps__features-container__feature-title div {
+    width: 150px;
+    height: 3px;
+  }
+}

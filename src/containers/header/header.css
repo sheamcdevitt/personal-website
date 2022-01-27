@@ -1,0 +1,144 @@
+.ps__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.ps__header a {
+  color: #8e88fb;
+}
+
+.ps__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: var(--font-family);
+
+  margin-right: 5rem;
+  color: var(--color-header);
+}
+
+.ps__header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.ps__header-content h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 43px;
+  line-height: 110%;
+}
+
+.ps__header-content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  color: var(--color-text);
+
+  margin-top: 1.5rem;
+}
+
+.ps__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps__header-image img {
+  width: 80%;
+
+  margin-right: 10rem;
+}
+
+.ps__header-content__people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+  margin-top: 2rem;
+}
+
+.ps__header-content__people img {
+  width: 50px;
+  margin: 0 0 0 2rem;
+  transition: 0.3s;
+}
+
+.ps__header-content__people img:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+.ps__header-content__people p {
+  margin: 0 0 0 0rem;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  color: var(--color-text);
+  line-height: 38px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .ps__header-content {
+    margin-left: 0rem;
+  }
+
+  .ps__header-image img {
+    width: 80%;
+
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ps__header {
+    flex-direction: column;
+  }
+  .ps__header-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .ps__header-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ps__header-image img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .ps__header {
+    flex-direction: row;
+  }
+  .ps__header-content h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .ps__header-content h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .ps__header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .ps__header-image img {
+    width: 80%;
+  }
+}

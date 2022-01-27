@@ -1,0 +1,131 @@
+.ps__about {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1%;
+  padding: 3rem;
+  margin-left: 15rem;
+  background: #8e88fb;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.ps__about-feature {
+  display: flex;
+}
+
+/* Customizing feature component as per needs */
+.ps__about-feature .ps__features-container__feature {
+  margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.ps__about-feature .ps__features-container_feature-text {
+  max-width: 700px;
+}
+
+.ps__about-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0rem 1rem 0rem;
+}
+
+.ps__about-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  max-width: 510px;
+}
+
+.ps__about-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+.ps__about-container-education {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.ps__about-container .ps__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.ps__about-container .ps__features-container_feature-text {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1370px) {
+  #flex {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column;
+  }
+  #flex > #a {
+    order: 1;
+  }
+  #flex > #b {
+    order: 4;
+  }
+  #flex > #c {
+    order: 2;
+  }
+  #flex > #d {
+    order: 5;
+  }
+  #flex > #e {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ps__about-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .ps__about-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .ps__about-feature .ps__features-container__feature {
+    flex-direction: row;
+  }
+
+  /* Customizing feature component as per needs */
+  .ps__about-feature .ps__features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+
+  .ps__about-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .ps__about-container .ps__features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
+}
