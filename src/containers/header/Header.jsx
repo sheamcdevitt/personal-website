@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import './header.css'
-import {computer, twitter, linkedin} from './import'
+import {computer, twitter, linkedin, github} from './import'
 import { motion } from 'framer-motion'
 import Modal from '../../components/Modal/Modal'
 
@@ -25,6 +25,7 @@ const Header = () => {
                 <p>Find me on:</p>
                <a href='https://twitter.com/sheamacdevitt'> <img src={twitter} /> </a>
                <a href="https://www.linkedin.com/in/shea-mcdevitt-401006190/"> <img src={linkedin} /> </a>
+               <a href="https://github.com/sheamcdevitt"> <img src={github} /> </a>
             </div>
            </div> 
            

@@ -241,7 +241,7 @@ const Modal = ({ handleClose, text, desc, type }) => {
 
 const ModalText = ({ text, desc }) =>{
 var original =$('.ps__highlight').text();
-var new_version = original.split('// ').join('<span class="slashColor">//</span>');
+var new_version = original.split('kdb+').join('<span class="slashColor">kdb+</span>');
 $('.ps__highlight').html(new_version)
    return (
   <div className="modal-text">

@@ -74,6 +74,10 @@ body {
   padding: 4rem 15rem;
 }
 
+.footer__padding {
+  padding: 1rem 15rem;
+}
+
 .section__margin {
   margin: 4rem 15rem;
 }
