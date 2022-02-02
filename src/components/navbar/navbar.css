@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 15rem;
+  /* margin-right: rem; */
   padding: 2rem 0rem;
 }
 
@@ -15,6 +16,10 @@
 }
 
 .ps__navbar-links_logo {
+  /* margin-right: 2rem; */
+}
+
+.ps__navbar-menu-burger {
   margin-right: 2rem;
 }
 
@@ -139,8 +144,8 @@
 
 @media screen and (max-width: 550px) {
   .ps__navbar {
-    margin-top: 0rem;
-    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
 
     margin-right: 2rem;
     padding: 0rem;
@@ -163,9 +168,10 @@
   }
 
   .ps__navbar-links_logo img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
+    /* margin-left: ; */
   }
 }
 

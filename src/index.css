@@ -4,6 +4,7 @@
 
 :root {
   --font-family: "Manrope", sans-serif;
+  font-size: 1rem;
 
   --gradient-text-dark: linear-gradient(
     89.97deg,
@@ -29,21 +30,45 @@
 @import-normalize;
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap);
 
-:root {
-  --dark: #101315;
-  --light: #eeeeee;
-  --gradient: linear-gradient(10deg, #f3f3f3, #ffffff);
-  --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
-  --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
-  font-size: 1rem;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: var(--dark);
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    #f3f3f3 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #f3f3f3 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    #f3f3f3 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    #f3f3f3 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    #f3f3f3 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   font-family: var(--font-family);
   height: 100%;
 }
@@ -163,7 +188,7 @@ button {
   padding: 0 3rem;
   min-height: 3rem;
   margin: auto auto 0 auto;
-  background: var(--dark);
+  background: var(--color-bg);
   color: var(--light);
 }
 
@@ -193,7 +218,7 @@ input {
   margin: 0 auto 0 0;
   padding: 0.25rem 0.5rem;
   outline: none;
-  background: var(--dark);
+  background: var(--color-bg);
   border: 2px solid #ff9d00;
   border-radius: 6px;
   color: #ff9d00;
@@ -263,7 +288,7 @@ li {
   padding: 0 1rem;
   margin: 2rem auto auto 0;
   background: var(--gradient2);
-  color: var(--dark);
+  color: var(--color-bg);
 }
 
 .close {
