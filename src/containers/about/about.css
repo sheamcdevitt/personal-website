@@ -70,6 +70,29 @@
   margin-top: 0.5rem;
 }
 
+@media screen and (min-width: 1745px) {
+  #flex {
+    display: flex;
+    /* Optional, if you want the DIVs 100% width: */
+    flex-direction: column;
+  }
+  #flex > #a {
+    order: 1;
+  }
+  #flex > #b {
+    order: 4;
+  }
+  #flex > #c {
+    order: 2;
+  }
+  #flex > #d {
+    order: 5;
+  }
+  #flex > #e {
+    order: 3;
+  }
+}
+
 @media screen and (max-width: 1370px) {
   #flex {
     display: flex;
