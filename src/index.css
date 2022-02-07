@@ -160,7 +160,7 @@ button {
 
 .modal {
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 400px);
+  height: min(50%, 500px);
 
   overflow-y: auto;
   margin: auto;
@@ -197,8 +197,8 @@ button {
   padding: 0 3rem;
   min-height: 3rem;
   margin: auto auto 0 auto;
-  background: var(--color-bg);
-  color: var(--light);
+  background: var(--color-footer);
+  color: var(--color-bg);
 }
 
 .save-button {

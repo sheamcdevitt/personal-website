@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 
 
-const Feature = ({ title,subtitle,year, text,link,id,desc }) => {
+const Feature = ({ title,subtitle,year, text,link,id,desc, stackList }) => {
 
   const [modalOpen, setModalOpen] = useState(false)
 
@@ -37,7 +37,7 @@ const Feature = ({ title,subtitle,year, text,link,id,desc }) => {
             <AnimatePresence initial={false}
             exitBeforeEnter={true}
             onExitComplete={() => null}>
-              {modalOpen && <Modal desc={desc} text={subtitle} modalOpen={modalOpen} handleClose={close}/> }
+              {modalOpen && <Modal desc={desc} text={subtitle} modalOpen={modalOpen} handleClose={close} stackList={stackList}/> }
             </AnimatePresence>
            
         </div>

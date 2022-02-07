@@ -15,7 +15,6 @@ div::-webkit-scrollbar-thumb {
 
 h4 {
   text-align: center;
-  color: var(--color-bg);
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: -0.04em;

@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { stateLogger } from "../../stateLogger";
 import Backdrop from "../Backdrop/Backdrop";
 import './modal.css'
-import {twitter} from './import'
-import $ from 'jquery'
 
 const dropIn = {
   hidden: {
@@ -120,7 +118,7 @@ const gifYouUp = {
   },
 };
 
-const Modal = ({ handleClose, text, desc, type }) => {
+const Modal = ({ handleClose, text, desc, stackList, type }) => {
   // Log state
   useEffect(() => {
     stateLogger("Modal", true);
@@ -139,7 +137,9 @@ const Modal = ({ handleClose, text, desc, type }) => {
           animate="visible"
           exit="exit"
         >
+          
           <ModalText text={text} desc={desc}/>
+          <ModalStack stackList={stackList}/>
           {/* <img src={twitter} alt="" /> */}
           <ModalButton onClick={handleClose} label="Close" />
         </motion.div>
@@ -240,14 +240,20 @@ const Modal = ({ handleClose, text, desc, type }) => {
 };
 
 const ModalText = ({ text, desc }) =>{
-var original =$('.ps__highlight').text();
-var new_version = original.split('kdb+').join('<span class="slashColor">kdb+</span>');
-$('.ps__highlight').html(new_version)
    return (
   <div className="modal-text">
-    <h4 >{text}</h4>
+    <h4 className="ps__highlight">{text}</h4>
     <h5 className="ps__highlight">{desc}</h5>
   </div>
+)};
+
+const ModalStack = ({stackList}) =>{
+  return (
+    <div className="ps__header-content__people">
+    <p>Tech:</p>
+    { stackList.map(item =>
+    <img src={item} />)}
+</div>
 )};
 
 const ModalButton = ({ onClick, label }) => (

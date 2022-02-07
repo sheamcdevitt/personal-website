@@ -70,7 +70,7 @@
   margin-top: 0.5rem;
 }
 
-@media screen and (min-width: 1745px) {
+@media screen and (min-width: 1765px) {
   #flex {
     display: flex;
     /* Optional, if you want the DIVs 100% width: */

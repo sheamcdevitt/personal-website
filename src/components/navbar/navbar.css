@@ -24,8 +24,8 @@
 }
 
 .ps__navbar-links_logo img {
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 100px;
   /* transition: 0.3s; */
 }
 
@@ -168,8 +168,8 @@
   }
 
   .ps__navbar-links_logo img {
-    width: 90px;
-    height: 90px;
+    width: 136px;
+    height: 80px;
     cursor: pointer;
     /* margin-left: ; */
   }

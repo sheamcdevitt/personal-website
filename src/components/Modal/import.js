@@ -1,3 +1,6 @@
 import twitter from "../../assets/twitter-purple.png";
+import linkedin from "../../assets/linkedin-purple.png";
+import computer from "../../assets/computer.png";
+import github from "../../assets/github-purple.png";
 
-export { twitter };
+export { linkedin, twitter, computer, github };
