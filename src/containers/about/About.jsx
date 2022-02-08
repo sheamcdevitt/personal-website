@@ -19,7 +19,7 @@ import {
   python,
   opencv,
   d3,
-} from 'import'
+} from './import'
 
 
 const About = () => {
