@@ -25,107 +25,12 @@ const dropIn = {
   },
 };
 
-const flip = {
-  hidden: {
-    transform: "scale(0) rotateX(-360deg)",
-    opacity: 0,
-    transition: {
-      delay: 0.3,
-    },
-  },
-  visible: {
-    transform: " scale(1) rotateX(0deg)",
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-  exit: {
-    transform: "scale(0) rotateX(360deg)",
-    opacity: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-
-const newspaper = {
-  hidden: {
-    transform: "scale(0) rotate(720deg)",
-    opacity: 0,
-    transition: {
-      delay: 0.3,
-    },
-  },
-  visible: {
-    transform: " scale(1) rotate(0deg)",
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-  exit: {
-    transform: "scale(0) rotate(-720deg)",
-    opacity: 0,
-    transition: {
-      duration: 0.3,
-    },
-  },
-};
-
-const badSuspension = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-    transform: "scale(0) rotateX(-360deg)",
-  },
-  visible: {
-    y: "-25vh",
-    opacity: 1,
-    transition: {
-      duration: 0.2,
-      type: "spring",
-      damping: 15,
-      stiffness: 500,
-    },
-  },
-  exit: {
-    y: "-100vh",
-    opacity: 0,
-  },
-};
-
-const gifYouUp = {
-  hidden: {
-    opacity: 0,
-    scale: 0,
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeIn",
-    },
-  },
-  exit: {
-    opacity: 0,
-    scale: 0,
-    transition: {
-      duration: 0.15,
-      ease: "easeOut",
-    },
-  },
-};
-
 const Modal = ({ handleClose, text, desc, stackList, type }) => {
   // Log state
   useEffect(() => {
     stateLogger("Modal", true);
     return () => stateLogger("Modal", false);
   }, []);
-
-  
 
   return (
     <Backdrop onClick={handleClose}>
@@ -140,7 +45,6 @@ const Modal = ({ handleClose, text, desc, stackList, type }) => {
           
           <ModalText text={text} desc={desc}/>
           <ModalStack stackList={stackList}/>
-          {/* <img src={twitter} alt="" /> */}
           <ModalButton onClick={handleClose} label="Close" />
         </motion.div>
      
@@ -252,7 +156,7 @@ const ModalStack = ({stackList}) =>{
     <div className="ps__header-content__people">
     <p>Tech:</p>
     { stackList.map(item =>
-    <img src={item} />)}
+    <img alt="item" src={item} />)}
 </div>
 )};
 

@@ -2,10 +2,6 @@ import React from 'react'
 import { Feature } from '../../components'
 import './about.css'
 import {
-  linkedin,
-  twitter,
-  computer,
-  github,
   kx,
   html,
   js,
