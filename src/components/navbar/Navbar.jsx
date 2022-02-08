@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="ps__navbar">
       <div className="ps__navbar-links">
         <div className="ps__navbar-links_logo">
-         <a href="#home"> <img src={logo} href="#home"/> </a>
+         <a href="#home"> <img alt="personal logo" src={logo} href="#home"/> </a>
         </div>
         <div className="ps__navbar-links_container">
           <Menu />
